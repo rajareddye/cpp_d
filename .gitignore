@@ -10,6 +10,9 @@
 #
 # Normal rules (sorted alphabetically)
 #
+**/1_creational/**/*.out
+**/2_structural/**/*.out
+**/**/*.out
 .*
 *.a
 *.asn1.[ch]
