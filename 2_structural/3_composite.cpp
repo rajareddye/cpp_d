@@ -36,7 +36,7 @@ public:
 };
 class Copy : public PageObject
 {
-    vector<PageObject*> copyPages;
+    vector<PageObject> copyPages;
 
 public:
     void AddElement(PageObject a)
