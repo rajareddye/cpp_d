@@ -1,8 +1,10 @@
+# g++ -fPIC -shared -o application.so application.cpp
+
 CXX = g++
 CXXFLAGS = -std=c++14 -Wall -g
 
 # List of source files
-SRC_FILES = main.cpp PluginManager.cpp UppercasePlugin.cpp
+SRC_FILES = client.cpp 
 
 # List of header files
 HEADER_FILES = PluginInterface.h
