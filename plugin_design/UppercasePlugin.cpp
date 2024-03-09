@@ -1,10 +1,9 @@
 // UppercasePlugin.cpp
 #include "UppercasePlugin.h"
-#include "PluginInterface.h" // Include the missing header file
+#include <algorithm>
 
-UppercasePlugin::UppercasePlugin() {
-    // Constructor implementation if needed.
-}
-extern "C" PluginInterface* createPlugin() {
-    return new UppercasePlugin();
+std::string UppercasePlugin::processText(const std::string& input) {
+    std::string result = input;
+    std::transform(result.begin(), result.end(), result.begin(), ::toupper);
+    return result;
 }
